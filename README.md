@@ -92,5 +92,5 @@ Run without --dry-run to actually delete files.
 
 ## License
 
-MIT
+MIT License - See LICENSE file for details.
 
