@@ -1,5 +1,8 @@
 # Hydra 🐍
 
+[![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)](https://www.rust-lang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A fast duplicate file finder and cleaner written in Rust.
 
 Hydra scans your directory for duplicate files created by copy operations (e.g., `file copy.txt`, `file (1).txt`, `file - Copy.txt`) and safely removes them, keeping only the original.
