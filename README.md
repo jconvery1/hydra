@@ -14,17 +14,46 @@ Hydra scans your directory for duplicate files created by copy operations (e.g.,
 
 ## Installation
 
+### Pre-built Binaries (Recommended)
+
+Download the latest release for your platform from the [Releases page](https://github.com/jconvery1/hydra/releases).
+
+**macOS (Apple Silicon):**
+
+```bash
+curl -LO https://github.com/jconvery1/hydra/releases/latest/download/hydra-macos-aarch64.tar.gz
+tar -xzf hydra-macos-aarch64.tar.gz
+chmod +x hydra
+sudo mv hydra /usr/local/bin/
+```
+
+**macOS (Intel):**
+
+```bash
+curl -LO https://github.com/jconvery1/hydra/releases/latest/download/hydra-macos-x86_64.tar.gz
+tar -xzf hydra-macos-x86_64.tar.gz
+chmod +x hydra
+sudo mv hydra /usr/local/bin/
+```
+
+**Linux (x86_64):**
+
+```bash
+curl -LO https://github.com/jconvery1/hydra/releases/latest/download/hydra-linux-x86_64.tar.gz
+tar -xzf hydra-linux-x86_64.tar.gz
+chmod +x hydra
+sudo mv hydra /usr/local/bin/
+```
+
+**Windows:**
+
+Download `hydra-windows-x86_64.zip` from the [Releases page](https://github.com/jconvery1/hydra/releases), extract it, and add the folder to your PATH.
+
+### Build from Source
+
 ```bash
 git clone git@github.com:jconvery1/hydra.git
 cd hydra
-cargo build --release
-```
-
-The binary will be available at `target/release/hydra`.
-
-To install globally:
-
-```bash
 cargo install --path .
 ```
 
