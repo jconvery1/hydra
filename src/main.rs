@@ -31,11 +31,12 @@ fn normalize_filename(filename: &str) -> String {
     
     // patterns to strip (order matters - check longer regex patterns first)
     let patterns = [
-        r" copy \d+$",       // macOS: "file copy 2"
-        r" copy$",           // macOS: "file copy"
-        r" - Copy \(\d+\)$", // Windows: "file - Copy (2)"
-        r" - Copy$",         // Windows: "file - Copy"
-        r" \(\d+\)$",        // Browsers/Apps: "file (1)" (Chrome, Firefox, downloads)
+        r" copy \d+$",       // "file copy 2"
+        r" copy$",           // "file copy"
+        r" - Copy \(\d+\)$", // "file - Copy (2)"
+        r" - Copy$",         // "file - Copy"
+        r" \(\d+\)$",        // "file (1)"
+        r"\(\d+\)$",         // "file(1)"
     ];
     
     let mut normalized = stem.to_string();
